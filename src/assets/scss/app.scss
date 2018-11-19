@@ -2,3 +2,35 @@
 @import 'foundation-emails';
 
 @import 'template/template';
+
+table.container {
+  width: 565px;
+  height: 670px;
+}
+
+img {
+  display: block;
+}
+
+#parent {
+  position: relative;
+  height: 670px;
+  width: 600px;
+}
+.logo {
+  z-index: 4000;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  webkit-filter: opacity(0.5) drop-shadow(0 0 0 transparent);
+  filter: opacity(0.5) drop-shadow(0 0 0 transparent);
+}
+.logo-small {
+    width: 15rem;
+    height: 15rem;
+}
+
+//.nelnet-logo {
+//  webkit-filter: opacity(0.5) drop-shadow(0 0 0 #8292A1);
+//  filter: opacity(0.5) drop-shadow(0 0 0 #8292A1);
+//}

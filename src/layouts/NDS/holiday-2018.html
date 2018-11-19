@@ -3,14 +3,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-<!--
-  ~  This program is protected by copyright and other intellectual property law.
-  ~  It is proprietary to and includes confidential information of Great Lakes
-  ~  Higher Education Corporation and Affiliates (Great Lakes).  This program may
-  ~  be disclosed and/or used only as authorized in a license agreement between
-  ~  Great Lakes and the user authorizing and controlling such use and disclosure.
-  -->
-
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:v="urn:schemas-microsoft-com:vml"
       xmlns:o="urn:schemas-microsoft-com:office:office"
@@ -26,12 +18,23 @@
     <!-- <style> -->
 </head>
 <body>
-<table class="body bg-subtle">
+<table class="body">
     <tr>
         <td class="center" align="center" valign="top">
             <center>
                 {{> preheader}}
+                <div id="parent" alt="Holiday greetings from {{logo-name}}">
+                    <img src="https://www.nelnet.net/marketingprod/email/2018/NDS/Client_Services/12648/images/blue-background.png" />
+                    {{#if logo-separate}}
+                        <div class="logo">
+                            <img src="https://www.nelnet.net/marketingprod/email/2018/NDS/Client_Services/12648/images/{{logo-file}}" width="200" height="50" class="responsive-image logo-small" alt="{{logo-name}} Logo" />
+                        </div>
+                    {{/if}}
+                </div>
                 <container>
+                    {{> body}}
+                    <spacer size="60"></spacer>
+                    {{> footer}}
                 </container>
             </center>
         </td>
