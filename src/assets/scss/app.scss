@@ -67,16 +67,16 @@ img {
     top: 40%;
     left: 30%;
 }
-<linearGradient id="Gradient1">
-<stop class="stop1" offset="0%"/>
-<stop class="stop2" offset="50%"/>
-<stop class="stop3" offset="100%"/>
-</linearGradient>
-
-.logo-ufi {
-  fill: url(#Gradient1);
-  //background: linear-gradient(90deg, rgba(125,126,126,1) 0%, rgba(248,249,249,1) 47%, rgba(125,126,126,1) 100%);
-}
+//<linearGradient id="Gradient1">
+//<stop class="stop1" offset="0%"/>
+//<stop class="stop2" offset="50%"/>
+//<stop class="stop3" offset="100%"/>
+//</linearGradient>
+//
+//.logo-ufi {
+//  fill: url(#Gradient1);
+//  //background: linear-gradient(90deg, rgba(125,126,126,1) 0%, rgba(248,249,249,1) 47%, rgba(125,126,126,1) 100%);
+//}
 
 //.nelnet-logo {
 //  webkit-filter: opacity(0.5) drop-shadow(0 0 0 #8292A1);
