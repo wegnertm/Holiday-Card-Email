@@ -1,8 +1,12 @@
 <row >
     <columns>
         <div id="parent" alt="Holiday greetings from {{logo-name}}">
-            <img src="https://www.nelnet.net/marketingprod/email/2018/NDS/Client_Services/12648/images/blue-background.png" />
-            <img src="https://www.nelnet.net/marketingprod/email/2018/NDS/Client_Services/12648/images/{{logo-file}}" width="200" height="50" class="responsive-image logo-small" alt="{{logo-name}} Logo" />
+            {{#if is-ufi}}
+                <img src="https://www.nelnet.net/marketingprod/email/2018/NDS/Client_Services/12648/images/green-background.png" />
+            {{else}}
+                <img src="https://www.nelnet.net/marketingprod/email/2018/NDS/Client_Services/12648/images/blue-background.png" />
+            {{/if}}
+            <img src="https://www.nelnet.net/marketingprod/email/2018/NDS/Client_Services/12648/images/{{logo-file}}" width="200" height="50" class="responsive-image logo-small {{#if is-ufi}}logo-ufi{{/if}}" alt="{{logo-name}} Logo" />
         </div>
     </columns>
 </row>
