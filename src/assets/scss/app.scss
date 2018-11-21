@@ -2,17 +2,22 @@
 @import 'foundation-emails';
 
 @import 'template/template';
+table.container {
+  .bg-dark {
+    background-color: $dark-gray;
+  }
 
-.bg-dark {
-  background-color: $dark-gray;
-}
+  .bg-medium {
+    background-color: $medium-gray;
+  }
 
-.bg-medium {
-  background-color: $medium-gray;
-}
+  .bg-light {
+    background-color: $light-gray;
+  }
 
-.bg-light {
-  background-color: $light-gray;
+  .bg-white {
+    background-color: $white;
+  }
 }
 
 .em-preheader {
@@ -31,7 +36,7 @@
     }
   }
   p {
-    color: white;
+    color: $white;
     text-align: center;
     font-size: 14px;
     font-weight: bold;
@@ -40,6 +45,11 @@
 }
 
 .em-footer {
+  p, a {
+    font-size: 12px;
+    font-weight: 300;
+    color: #6D6E70;
+  }
   a {
     color: $link-color;
     text-decoration: underline;

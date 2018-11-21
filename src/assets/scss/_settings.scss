@@ -21,8 +21,8 @@ $secondary-color: #777777;
 $success-color: #3adb76;
 $warning-color: #ffae00;
 $alert-color: #ec5840;
-$light-gray: #f3f3f3;
-$medium-gray: #cacaca;
+$light-gray: #F7F7F7;
+$medium-gray: #918F8F;
 $dark-gray: #8a8a8a;
 $black: #0a0a0a;
 $white: #fefefe;
@@ -33,7 +33,7 @@ $global-width: 580px;
 $global-width-small: 95%;
 $global-gutter: 0px;
 $body-background: $light-gray;
-$container-background: $white;
+$container-background: $light-gray;
 $global-padding: 0px;
 $global-margin: 0px;
 $global-radius: 3px;
@@ -57,7 +57,7 @@ $block-grid-gutter: $global-gutter;
 // -------------
 
 $global-font-color: $black;
-$body-font-family: "Anisha Free";
+$body-font-family: Arial, Helvetica, sans-serif;
 $global-font-weight: normal;
 $header-color: $primary-color;
 $global-line-height: 1.3;
