@@ -1,23 +1,33 @@
 ---
 layout: holiday-2018
-preheader: Happy Holidays from Nelnet
+preheader: Holiday greetings
 subject: Happy holidays from Nelnet
 
 logo-name: Nelnet
 logo-file: nelnet.png
-logo-full-file: nelnet-full.jpg
+logo-full-file: nelnet-color-full.png
+logo-link: https://www.nelnet.com/welcome
 
 vendor: Nelnet, Inc
 from-email: Client Services [ClientServices@e.Nelnet.net]
 vendor-address: 121 South 13th Street, Lincoln, NE 68508, USA
 vendor-link: http://www.pages05.net/nelnetnelnet/clientservicesoptout/optout?spMailingID=20561646&spUserID=NTI2OTU5MjU1NTg2S0&spJobID=MTM4MDk0MjE4MgS2&spReportId=MTM4MDk0MjE4MgS2
 ---
-
 <container class="bg-white">
-    {{> background-with-logo}}
-    <spacer size="200"></spacer>
+{{> logo-full}}
+    <spacer size="50"></spacer>
+    {{> holiday-background-header}}
+    <spacer size="50"></spacer>
     {{> holiday-text-image}}
-    <spacer size="200"></spacer>
-    {{> logo-full}}
-    <spacer size="200"></spacer>
+    <row>
+        <columns class="col-pad">
+            <center>
+            <p class="p-l-lg">
+                This holiday season, we wish you a time of relaxation and reflection. A time filled with family, friends, and laughter.
+            </p>
+            </center>
+        </columns>
+    </row>
+    <spacer size="50"></spacer>
+    {{> holiday-background-footer}}
 </container>

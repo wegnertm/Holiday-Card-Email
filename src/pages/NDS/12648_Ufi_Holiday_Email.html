@@ -1,12 +1,13 @@
 ---
 layout: holiday-2018
-preheader: Happy Holidays from U-fi
+preheader: Holiday greetings
 subject: Happy Holidays from U-fi
 
 is-ufi: true
 logo-name: Ufi
 logo-file: ufi.svg
-logo-full-file: ufi-full.svg
+logo-full-file: ufi-color-full.svg
+logo-link: https://u-fi.com/
 
 vendor: U-fi Student Loans
 from-email: U-fi [StudentLoans@e.U-fi.com]
@@ -15,10 +16,20 @@ vendor-link:
 ---
 
 <container class="bg-white">
-    {{> background-with-logo}}
-    <spacer size="200"></spacer>
-    {{> holiday-text-image}}
-    <spacer size="200"></spacer>
     {{> logo-full}}
-    <spacer size="200"></spacer>
+    <spacer size="50"></spacer>
+    {{> holiday-background-header}}
+    <spacer size="50"></spacer>
+    {{> holiday-text-image}}
+    <row>
+        <columns class="col-pad">
+            <center>
+                <p class="p-l-lg">
+                    This holiday season, we wish you a time of relaxation and reflection. A time filled with family, friends, and laughter.
+                </p>
+            </center>
+        </columns>
+    </row>
+    <spacer size="50"></spacer>
+    {{> holiday-background-footer}}
 </container>

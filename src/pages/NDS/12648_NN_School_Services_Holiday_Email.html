@@ -1,11 +1,12 @@
 ---
 layout: holiday-2018
-preheader: Happy Holidays from Nelnet School Services
+preheader: Holiday greetings
 subject: Happy holidays from Nelnet School Services
 
 logo-name: Nelnet
 logo-file: nelnet.png
-logo-full-file: nelnet-full.jpg
+logo-full-file: nelnet-color-full.png
+logo-link: https://www.nelnet.com/welcome
 
 vendor: Nelnet, Inc
 from-email: Dawn Knight [Dawn.Knight@e.Nelnet.net]
@@ -14,10 +15,20 @@ vendor-link: http://nelnet.mkt5365.com/ps_optout/Partner_Solutions_optout?spMail
 ---
 
 <container class="bg-white">
-    {{> background-with-logo}}
-    <spacer size="200"></spacer>
-    {{> holiday-text-image}}
-    <spacer size="200"></spacer>
     {{> logo-full}}
-    <spacer size="200"></spacer>
+    <spacer size="50"></spacer>
+    {{> holiday-background-header}}
+    <spacer size="50"></spacer>
+    {{> holiday-text-image}}
+    <row>
+        <columns class="col-pad">
+            <center>
+                <p class="p-l-lg">
+                    This holiday season, we wish you a time of relaxation and reflection. A time filled with family, friends, and laughter.
+                </p>
+            </center>
+        </columns>
+    </row>
+    <spacer size="50"></spacer>
+    {{> holiday-background-footer}}
 </container>
