@@ -140,7 +140,7 @@ td {
  */
 
 table.container {
-  width: 660px;
+  width: 580px;
   .bg-dark {
     background-color: $dark-gray;
   }
@@ -165,6 +165,7 @@ table.container {
 .em-preheader {
   margin-top: 5px;
   margin-bottom: 0;
+  max-width: 100%;
   a {
     color: $link-color;
     text-decoration: underline;
@@ -214,11 +215,23 @@ img {
 
 .logo-full {
   position: relative;
-  top: 1.50rem;
+  width: 152px;
+  height: auto;
   @media only screen and (max-width: $global-breakpoint) {
     max-width: 50% !important;
   }
 }
+
+.logo-allo,
+.logo-ufi {
+  width: 100px;
+}
+.logo-firstmark,
+.logo-proxi {
+  width: 190px;
+}
+
+
 
 .background-footer {
   width: 903px !important;
