@@ -1,24 +1,35 @@
 ---
 layout: holiday-2018
-preheader: Happy Holidays from Firstmark Services
+preheader: Holiday greetings
 subject: Happy Holidays from Firstmark Services
 
 logo-name: Firstmark
 logo-file: firstmark.png
-logo-full-file: firstmark-full.jpg
+logo-full-file: firstmark-color-full.png
+logo-link: https://firstmarkservices.com/
+logo-class: logo-firstmark
 
 vendor: Firstmark Services
-from-email: Firstmark Services [ClientServices@e.FirstmarkServices.com]
 vendor-address: 121 South 13th Street, Lincoln, NE 68508, USA
 vendor-link: http://www.pages05.net/nelnetnelnet/firstmarkoptout/optout?spMailingID=20561634&spUserID=NTI2OTU5MTAzNjQ5S0&spJobID=MTM4MDk0MjA4OQS2&spReportId=MTM4MDk0MjA4OQS2
 ---
 
-{{> background-with-logo}}
-<spacer size="60"></spacer>
-<row>
-    <columns>
-        <h1 class="text-center">Warmest Holiday Wishes</h1>
-    </columns>
-</row>
-<spacer size="100"></spacer>
-{{> logo-full}}
+<container class="bg-white">
+    <spacer size="30"></spacer>
+    {{> logo-full}}
+    <spacer size="30"></spacer>
+    {{> holiday-background-header}}
+    <spacer size="50"></spacer>
+    {{> holiday-text-image}}
+    <row>
+        <columns class="col-pad">
+            <center>
+                <p class="p-l-lg">
+                    This holiday season, we wish you a time of relaxation and reflection. A time filled with family, friends, and laughter.
+                </p>
+            </center>
+        </columns>
+    </row>
+    <spacer size="50"></spacer>
+    {{> holiday-background-footer}}
+</container>

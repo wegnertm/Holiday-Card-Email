@@ -1,25 +1,36 @@
 ---
 layout: holiday-2018
-preheader: Happy Holidays from U-fi
+preheader: Holiday greetings
 subject: Happy Holidays from U-fi
 
 is-ufi: true
 logo-name: Ufi
 logo-file: ufi.svg
-logo-full-file: ufi-full.svg
+logo-full-file: ufi-color-full.png
+logo-link: https://u-fi.com/
+logo-class: logo-ufi
 
 vendor: U-fi Student Loans
-from-email: U-fi [StudentLoans@e.U-fi.com]
 vendor-address: 121 South 13th Street, Lincoln, NE 68508, USA
 vendor-link:
 ---
 
-{{> background-with-logo}}
-<spacer size="60"></spacer>
-<row>
-    <columns>
-        <h1 class="text-center">Warmest Holiday Wishes</h1>
-    </columns>
-</row>
-<spacer size="100"></spacer>
-{{> logo-full}}
+<container class="bg-white">
+    <spacer size="25"></spacer>
+    {{> logo-full}}
+    <spacer size="30"></spacer>
+    {{> holiday-background-header}}
+    <spacer size="50"></spacer>
+    {{> holiday-text-image}}
+    <row>
+        <columns class="col-pad">
+            <center>
+                <p class="p-l-lg">
+                    This holiday season, we wish you a time of relaxation and reflection. A time filled with family, friends, and laughter.
+                </p>
+            </center>
+        </columns>
+    </row>
+    <spacer size="50"></spacer>
+    {{> holiday-background-footer}}
+</container>

@@ -1,25 +1,35 @@
 ---
 layout: holiday-2018
-preheader: Happy Holidays from ALLO
+preheader: Holiday greetings
 subject: Happy Holidays from ALLO
 
 logo-name: Allo
 logo-file: allo.png
-logo-full-file: allo-full.jpg
+logo-full-file: allo-color-full.png
+logo-link: https://www.allocommunications.com/
 
 vendor: ALLO
-from-email: ALLO [marketing@e.allocommunications.com]
 vendor-address: 330 S 21 St, Lincoln NE, 68510
 vendor-link: http://www.pages05.net/nelnetnelnet/allo/allo-opt-out?spMailingID=20561643&spUserID=NTI2OTU5MjU1NDA3S0&spJobID=MTM4MDk0MjE1NgS2&spReportId=MTM4MDk0MjE1NgS2
 
 ---
 
-{{> background-with-logo}}
-<spacer size="60"></spacer>
-<row>
-    <columns>
-        <h1 class="text-center">Warmest Holiday Wishes</h1>
-    </columns>
-</row>
-<spacer size="100"></spacer>
-{{> logo-full}}
+<container class="bg-white">
+    <spacer size="30"></spacer>
+    {{> logo-full}}
+    <spacer size="30"></spacer>
+    {{> holiday-background-header}}
+    <spacer size="50"></spacer>
+    {{> holiday-text-image}}
+    <row>
+        <columns class="col-pad">
+            <center>
+                <p class="p-l-lg">
+                    This holiday season, we wish you a time of relaxation and reflection. A time filled with family, friends, and laughter.
+                </p>
+            </center>
+        </columns>
+    </row>
+    <spacer size="50"></spacer>
+    {{> holiday-background-footer}}
+</container>
