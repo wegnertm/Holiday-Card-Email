@@ -1,6 +1,6 @@
 @import 'settings';
 @import 'foundation-emails';
-
+@import 'mixins';
 @import 'template/template';
 
 $gutter: 40px;
@@ -54,6 +54,10 @@ h4, .h4 {
 
 h5, .h5 {
   font-size: $h5-font-size;
+}
+
+.text-scholarnet {
+  color: $scholarnet-color;
 }
 
 
@@ -124,7 +128,39 @@ td {
   hyphens: none;
   border-collapse: collapse !important;
 }
+.m-l-xs {
+  margin-left: 8px;
+}
+.m-l-sm {
+  margin-left: 16px;
+}
+.m-l-md {
+  margin-left: 24px;
+}
+.m-l-lg {
+  margin-left: 32px;
+}
 
+.m-r-xs {
+  margin-right: 8px;
+}
+.m-r-sm {
+  margin-right: 16px;
+}
+.m-r-md {
+  margin-right: 24px;
+}
+.m-r-lg {
+  margin-right: 32px;
+}
+
+.m-b-none {
+  margin-bottom: 0;
+}
+
+.p-l-xs {
+  padding-left: 8px;
+}
 .p-l-sm {
   padding-left: 16px;
 }
@@ -133,6 +169,19 @@ td {
 }
 .p-l-lg {
   padding-left: 32px;
+}
+
+.p-r-xs {
+  padding-right: 8px;
+}
+.p-r-sm {
+  padding-right: 16px;
+}
+.p-r-md {
+  padding-right: 24px;
+}
+.p-r-lg {
+  padding-right: 32px;
 }
 
 /*
@@ -156,6 +205,10 @@ table.container {
   .bg-white {
     background-color: $white;
   }
+}
+
+.bg-medium {
+  background-color: $medium-gray;
 }
 
 /*
@@ -187,6 +240,25 @@ table.container {
   }
 }
 
+.sn-preheader {
+  margin-top: 5px;
+  margin-bottom: 0;
+  max-width: 100%;
+  a {
+    color: #1C6279;
+    text-decoration: underline;
+    font-size: 12px;
+    font-weight: 700;
+  }
+  p {
+    color: #757575;
+    margin-top: 16px;
+    line-height: 1.3;
+    font-size: 12px;
+    font-weight: 700;
+  }
+}
+
 /*
   FOOTER
  */
@@ -204,6 +276,28 @@ table.container {
       color: $link-visited-color;
     }
   }
+}
+/* =============
+    BUTTONS
+ =============== */
+/*
+ * Buttons
+ */
+
+.button.rounded {
+  td {
+    border-radius: $global-radius;
+    border: 0px solid transparent !important;
+  }
+  a {
+    text-align: center;
+  }
+}
+
+//SCHOLARNET BUTTON
+table.button.scholarnet tbody tr td {
+  border-color: $scholarnet-color;
+  background: $scholarnet-color;
 }
 
 /*
@@ -234,5 +328,8 @@ img {
   width: 152px;
 }
 .background-footer {
+  width: 903px !important;
+}
+.background-header {
   width: 903px !important;
 }
