@@ -1,0 +1,13 @@
+@mixin outline-button-rounded($color) {
+  background: $white;
+  a {
+    border: 1px solid transparent;
+    color: $black;
+    &:focus, &:hover, &:active {
+      border: 1px solid #000000;
+      background: $color;
+      color: $white;
+    }
+
+  }
+}

@@ -1,11 +1,15 @@
 <row class="collapse">
     <columns>
         <center>
-            {{#if is-ufi}}
-            <img width="903" src="https://www.nelnet.net/marketingprod/email/2018/NDS/Client_Services/12648/images/green-background-header.png" />
-            {{else}}
-            <img width="903" src="https://www.nelnet.net/marketingprod/email/2018/NDS/Client_Services/12648/images/blue-background-header.png" />
-            {{/if}}
+            {{#ifpage '12648_Ufi_Holiday_Email'}}
+                <img width="903" src="{{img-var}}/green-background-header.png" />
+            {{/ifpage}}
+            {{#ifpage '12737_SN_Holiday_Email'}}
+                <img width="903" class="background-header" src="{{img-var}}/background-header.jpg" />
+            {{/ifpage}}
+            {{#unlesspage '12648_Ufi_Holiday_Email' '12737_SN_Holiday_Email'}}
+                <img width="903" src="{{img-var}}/blue-background-header.png" />
+            {{/unlesspage}}
         </center>
     </columns>
 </row>

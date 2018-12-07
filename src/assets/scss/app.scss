@@ -1,6 +1,6 @@
 @import 'settings';
 @import 'foundation-emails';
-
+@import 'mixins';
 @import 'template/template';
 
 $gutter: 40px;
@@ -56,14 +56,14 @@ h5, .h5 {
   font-size: $h5-font-size;
 }
 
+.text-scholarnet {
+  color: $scholarnet-color;
+}
+
 
 p {
   line-height: 1.6;
   margin-bottom: 16px;
-  a {
-    Margin: inherit;
-    margin: inherit;
-  }
 }
 
 strong {
@@ -84,20 +84,20 @@ html,
 
 @media (min-width: $global-breakpoint) {
   .col-pad {
-    padding-left: $gutter !important;
-    padding-right: $gutter !important;
+    padding-left: 40px !important;
+    padding-right: 40px !important;
   }
 
   .col-pad-sm {
-    padding-left: $gutter/2 !important;
-    padding-right: $gutter/2 !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
   }
 
   .col-pad-left {
-    padding-left: $gutter !important;
+    padding-left: 40px !important;
   }
   .col-pad-right {
-    padding-right: $gutter !important;
+    padding-right: 40px !important;
   }
 }
 
@@ -124,7 +124,39 @@ td {
   hyphens: none;
   border-collapse: collapse !important;
 }
+.m-l-xs {
+  margin-left: 8px;
+}
+.m-l-sm {
+  margin-left: 16px;
+}
+.m-l-md {
+  margin-left: 24px;
+}
+.m-l-lg {
+  margin-left: 32px;
+}
 
+.m-r-xs {
+  margin-right: 8px;
+}
+.m-r-sm {
+  margin-right: 16px;
+}
+.m-r-md {
+  margin-right: 24px;
+}
+.m-r-lg {
+  margin-right: 32px;
+}
+
+.m-b-none {
+  margin-bottom: 0;
+}
+
+.p-l-xs {
+  padding-left: 8px;
+}
 .p-l-sm {
   padding-left: 16px;
 }
@@ -133,6 +165,23 @@ td {
 }
 .p-l-lg {
   padding-left: 32px;
+}
+
+.p-r-xs {
+  padding-right: 8px;
+}
+.p-r-sm {
+  padding-right: 16px;
+}
+.p-r-md {
+  padding-right: 24px;
+}
+.p-r-lg {
+  padding-right: 32px;
+}
+
+.display-inline {
+  display: inline;
 }
 
 /*
@@ -156,6 +205,10 @@ table.container {
   .bg-white {
     background-color: $white;
   }
+}
+
+.bg-medium {
+  background-color: $medium-gray;
 }
 
 /*
@@ -187,6 +240,23 @@ table.container {
   }
 }
 
+.sn-preheader {
+  max-width: 100%;
+  margin-top: 16px;
+  a {
+    color: #1C6279;
+    text-decoration: underline;
+    font-size: 12px;
+    font-weight: 700;
+  }
+  p {
+    color: #757575;
+    line-height: 1.3;
+    font-size: 12px;
+    font-weight: 700;
+  }
+}
+
 /*
   FOOTER
  */
@@ -203,6 +273,22 @@ table.container {
     &:visited {
       color: $link-visited-color;
     }
+  }
+}
+/* =============
+    BUTTONS
+ =============== */
+/*
+ * Buttons
+ */
+
+//SCHOLARNET BUTTON
+table.button.scholarnet {
+  background: $scholarnet-color !important;
+  border-radius: $global-radius;
+  a {
+    background: $scholarnet-color;
+    border: 1px solid $scholarnet-color;
   }
 }
 
@@ -234,5 +320,8 @@ img {
   width: 152px;
 }
 .background-footer {
+  width: 903px !important;
+}
+.background-header {
   width: 903px !important;
 }
